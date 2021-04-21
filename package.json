@@ -8,7 +8,7 @@
     "build": "env NODE_ENV=production npx babel src -d dist",
     "start": "node dist",
 	"predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d package",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "test-watch": "ava --watch",
     "test": "ava --verbose",
