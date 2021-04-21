@@ -7,6 +7,8 @@
     "dev": "env NODE_ENV=development nodemon -w src --exec \"babel-node src\"",
     "build": "env NODE_ENV=production npx babel src -d dist",
     "start": "node dist",
+	"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "test-watch": "ava --watch",
     "test": "ava --verbose",
@@ -65,5 +67,5 @@
   "bugs": {
     "url": "https://github.com/developit/express-es6-rest-api/issues"
   },
-  "homepage": "https://github.com/developit/express-es6-rest-api#readme"
+  "homepage": "https://rosaplatform.github.io/rosaplatform"
 }
